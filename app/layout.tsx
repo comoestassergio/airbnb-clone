@@ -1,3 +1,4 @@
+import LoginModal from './components/modals/LoginModal'
 import RegisterModal from './components/modals/RegisterModal'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ToasterProvider />
+        <LoginModal />
         <RegisterModal />
         <Navbar />
         {children}
