@@ -1,6 +1,7 @@
 import RegisterModal from './components/modals/RegisterModal'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
+import ToasterProvider from './providers/ToasterProvider'
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <ToasterProvider />
         <RegisterModal />
+        <Navbar />
         {children}
       </body>
     </html>
